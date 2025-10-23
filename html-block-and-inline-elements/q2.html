@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Product Catalog</title>
+  <!--
+    Product catalog page using only HTML.
+    - Products listed in a table with columns: Product Name, Description, Price, Availability
+    - Each product has one <img> inside a table cell
+    - Example use of colspan and rowspan included
+    Replace image src paths with your actual image files.
+  -->
+</head>
+<body>
+  <header>
+    <h1>Store — Product Catalog</h1>
+    <p>Browse our featured products below.</p>
+  </header>
+
+  <main>
+    <table border="1" cellpadding="8" cellspacing="0">
+      <!-- table-wide category row using colspan -->
+      <thead>
+        <tr>
+          <th colspan="4">Electronics (Featured)</th>
+        </tr>
+        <tr>
+          <th>Product</th>
+          <th>Description</th>
+          <th>Price</th>
+          <th>Availability</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <!-- Product 1: normal single-row product -->
+        <tr>
+          <td>
+            <strong>ZX Headphones</strong><br>
+            <img src="images/zx-headphones.jpg" alt="ZX Headphones" width="120">
+          </td>
+          <td>Over-ear wireless headphones with active noise cancellation and 30-hour battery life.</td>
+          <td>₹3,499</td>
+          <td>In stock</td>
+        </tr>
+
+        <!-- Product 2 & 3: Use rowspan to show the same image for two variants -->
+        <tr>
+          <td rowspan="2">
+            <strong>Nova Smartwatch</strong><br>
+            <!-- image spans two rows (variants: 40mm & 44mm) -->
+            <img src="images/nova-watch.jpg" alt="Nova Smartwatch" width="120">
+          </td>
+          <td>40mm case — lightweight alloy, heart-rate monitoring.</td>
+          <td>₹5,999</td>
+          <td>Limited stock</td>
+        </tr>
+        <tr>
+          <td>44mm case — ceramic bezel, longer battery life.</td>
+          <td>₹6,799</td>
+          <td>Pre-order</td>
+        </tr>
+
+        <!-- Product 4: Use colspan in the description to include extra details across two columns -->
+        <tr>
+          <td>
+            <strong>Arc Wireless Mouse</strong><br>
+            <img src="images/arc-mouse.jpg" alt="Arc Wireless Mouse" width="120">
+          </td>
+          <td colspan="2">Ergonomic design, dual‑mode (Bluetooth + 2.4GHz), programmable buttons.<br>Includes 1-year warranty.</td>
+          <td>In stock</td>
+        </tr>
+
+        <!-- Product 5: another normal product -->
+        <tr>
+          <td>
+            <strong>Beam Portable Speaker</strong><br>
+            <img src="images/beam-speaker.jpg" alt="Beam Portable Speaker" width="120">
+          </td>
+          <td>Compact Bluetooth speaker — splash resistant, stereo pairing support.</td>
+          <td>₹2,199</td>
+          <td>Out of stock</td>
+        </tr>
+
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td colspan="4">All prices inclusive of GST. Images are representative — actual product may vary.</td>
+        </tr>
+      </tfoot>
+    </table>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Example Store</p>
+  </footer>
+</body>
+</html>
