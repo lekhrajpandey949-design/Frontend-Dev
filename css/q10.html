@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complete Webpage Layout</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background: #1976d2;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    .hero {
+      background: url('https://picsum.photos/1200/400') center/cover no-repeat;
+      height: 50vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 2em;
+      text-shadow: 2px 2px 5px black;
+    }
+
+    .about, .services, .contact {
+      padding: 50px 20px;
+    }
+
+    .about {
+      display: flex;
+      gap: 20px;
+    }
+
+    .about img {
+      width: 40%;
+      border-radius: 10px;
+    }
+
+    .services {
+      background: rgba(33, 150, 243, 0.1);
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .service {
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      width: 250px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      margin: auto;
+    }
+
+    .contact input, .contact textarea {
+      margin: 10px 0;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    footer {
+      text-align: center;
+      background: #0d47a1;
+      color: white;
+      padding: 15px;
+    }
+
+    @media (max-width: 768px) {
+      .about {
+        flex-direction: column;
+      }
+      .about img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">Welcome to My Website</section>
+
+  <section class="about">
+    <img src="https://picsum.photos/400/300" alt="About">
+    <div>
+      <h2>About Me</h2>
+      <p>I am a passionate web developer specializing in front-end design and user experience.</p>
+    </div>
+  </section>
+
+  <section class="services">
+    <div class="service"><h3>Web Design</h3><p>Creative and responsive designs for modern websites.</p></div>
+    <div class="service"><h3>Development</h3><p>Building fast, secure, and reliable web applications.</p></div>
+    <div class="service"><h3>SEO</h3><p>Improving your website’s visibility and reach.</p></div>
+  </section>
+
+  <section class="contact">
+    <h2 style="text-align:center;">Contact Me</h2>
+   

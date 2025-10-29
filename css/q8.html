@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      height: 100vh;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #1976d2;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      z-index: 1;
+    }
+
+    .sidebar {
+      background: #1565c0;
+      color: white;
+      width: 200px;
+      padding: 70px 10px 10px;
+    }
+
+    .main {
+      flex: 1;
+      padding: 80px 20px 20px 20px;
+      background: #f1f8e9;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .box {
+      background: white;
+      flex: 1 1 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      padding: 20px;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        flex-direction: column;
+      }
+      .sidebar {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>Dashboard</header>
+  <div class="sidebar">
+    <p>🏠 Home</p>
+    <p>📊 Reports</p>
+    <p>⚙️ Settings</p>
+  </div>
+  <div class="main">
+    <div class="box">Content Box 1</div>
+    <div class="box">Content Box 2</div>
+  </div>
+</body>
+</html>

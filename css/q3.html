@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Team</title>
+
+  <style>
+    /* ======= Global Reset ======= */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: #f1f8e9;
+      color: #333;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #33691e;
+      font-size: 2rem;
+    }
+
+    /* ======= Team Container ======= */
+    .team-container {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      flex-wrap: wrap;
+      gap: 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    /* ======= Team Card ======= */
+    .team-card {
+      background: #fff;
+      border: 2px solid #c5e1a5;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      flex: 1 1 300px;
+      max-width: 320px;
+      text-align: center;
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .team-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .team-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #8bc34a;
+      margin-bottom: 15px;
+    }
+
+    .team-card h3 {
+      font-size: 1.2rem;
+      color: #33691e;
+    }
+
+    .team-card h4 {
+      font-size: 0.95rem;
+      color: #689f38;
+      margin-bottom: 10px;
+    }
+
+    .team-card p {
+      font-size: 0.9rem;
+      color: #555;
+      line-height: 1.4em;
+    }
+
+    /* ======= Highlight Leader ======= */
+    .team-lead {
+      background: #dcedc8;
+      border: 2px solid #8bc34a;
+    }
+
+    /* ======= Responsive ======= */
+    @media (max-width: 600px) {
+      .team-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Meet Our Team</h1>
+
+  <div class="team-container">
+    <div class="team-card">
+      <img src="https://i.pinimg.com/564x/2f/63/d7/2f63d74ceab6df93e2dd36da9cf8f01d.jpg" alt="Member 1">
+      <h3>Ravi Sharma</h3>
+      <h4>Frontend Developer</h4>
+      <p>Ravi is passionate about UI/UX design and develops creative, user-friendly web interfaces.</p>
+    </div>
+
+    <div class="team-card team-lead">
+      <img src="https://i.pinimg.com/564x/09/f8/f0/09f8f0df35daae48d7a26a22c1b041b7.jpg" alt="Team Lead">
+      <h3>Lekhraj Pandey</h3>
+      <h4>Team Lead</h4>
+      <p>Lekhraj is a B.Tech CSE student leading the team with a focus on clean code and creative ideas.</p>
+    </div>
+
+    <div class="team-card">
+      <img src="https://i.pinimg.com/564x/68/02/d7/6802d73073e9da909b08b009f621f7b0.jpg" alt="Member 3">
+      <h3>Priya Verma</h3>
+      <h4>Backend Developer</h4>
+      <p>Priya specializes in Java and database management, ensuring smooth backend performance.</p>
+    </div>
+  </div>
+</body>
+</html>

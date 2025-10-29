@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover Mathura</title>
+
+  <style>
+    /* ==========
+       General Reset & Variables
+       ========== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary: #0b5fff;
+      --text-dark: #111827;
+      --text-light: #ffffff;
+      --bg-light: #f9fafb;
+    }
+
+    body {
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      background: var(--bg-light);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    /* ==========
+       Header + Navigation
+       ========== */
+    header {
+      position: sticky;
+      top: 0;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      z-index: 100;
+    }
+
+    header .inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1100px;
+      margin: auto;
+      padding: 1rem 2rem;
+    }
+
+    header h1 {
+      color: var(--primary);
+      font-size: 1.5rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #555;
+      margin-left: 1rem;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    /* ==========
+       Sections
+       ========== */
+    section {
+      padding: 5vh 2rem;
+      text-align: center;
+    }
+
+    /* Hero section with parallax effect */
+    #overview {
+      background: url("https://images.unsplash.com/photo-1505765050693-3c9d8d3d7db2?q=80&w=1600&auto=format&fit=crop")
+        center/cover fixed;
+      color: var(--text-light);
+      min-height: 60vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    #overview h2 {
+      font-size: 2rem;
+      font-weight: 800;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    #overview p {
+      font-size: 1.1rem;
+    }
+
+    /* Linear gradient section */
+    #culture {
+      background: linear-gradient(120deg, #e0e7ff, #ffffff);
+    }
+
+    #culture h2 {
+      font-size: 1.8rem;
+      color: var(--primary);
+    }
+
+    #culture p {
+      max-width: 700px;
+      margin: 1rem auto;
+    }
+
+    /* Radial gradient section */
+    #places {
+      background: radial-gradient(circle at top left, #ffe0b2, #fff);
+      border-top: 5px solid rgba(0, 0, 0, 0.1);
+      border-bottom: 5px solid rgba(0, 0, 0, 0.1);
+    }
+
+    #places h2 {
+      font-size: 1.8rem;
+      color: #c0392b;
+    }
+
+    #places ul {
+      list-style: disc;
+      max-width: 400px;
+      margin: 1rem auto;
+      text-align: left;
+    }
+
+    /* Second parallax section */
+    #visit {
+      background: url("https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?q=80&w=1600&auto=format&fit=crop")
+        center/cover fixed;
+      color: var(--text-light);
+      padding: 6rem 2rem;
+    }
+
+    #visit h2 {
+      font-size: 1.8rem;
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+
+    /* ==========
+       Footer
+       ========== */
+    footer {
+      background: #0b1220;
+      color: #dbeafe;
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    /* ==========
+       Responsive
+       ========== */
+    @media (max-width: 700px) {
+      #overview, #visit {
+        background-attachment: scroll; /* Disable parallax for small devices */
+      }
+      header .inner {
+        flex-direction: column;
+      }
+      nav a {
+        margin: 0.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="inner">
+      <h1>Discover Mathura</h1>
+      <nav>
+        <a href="#overview">Overview</a>
+        <a href="#culture">Culture</a>
+        <a href="#places">Places</a>
+        <a href="#visit">Visit Tips</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="overview">
+      <h2>Welcome to Mathura</h2>
+      <p>The birthplace of Lord Krishna — where spirituality meets culture.</p>
+    </section>
+
+    <!-- LINEAR GRADIENT SECTION -->
+    <section id="culture">
+      <h2>Culture & Festivals</h2>
+      <p>
+        Mathura is known for its colorful <strong>Holi</strong> celebrations and
+        <em>Janmashtami</em> festivities. Every street here sings with
+        devotion, art, and vibrant energy.
+      </p>
+    </section>
+
+    <!-- RADIAL GRADIENT SECTION -->
+    <section id="places">
+      <h2>Must-Visit Places</h2>
+      <ul>
+        <li>Banke Bihari Temple</li>
+        <li>Vishram Ghat</li>
+        <li>Dwarkadhish Temple</li>
+      </ul>
+    </section>
+
+    <!-- SECOND FIXED BACKGROUND -->
+    <section id="visit">
+      <h2>Best Time to Visit</h2>
+      <p>
+        October to March offers pleasant weather. Don’t miss the spiritual
+        aarti at sunset — it’s a once-in-a-lifetime experience.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Mathura City Guide | Created by Lekhraj</p>
+  </footer>
+</body>
+</html>

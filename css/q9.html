@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magazine Layout</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      background: #f2efe9;
+      padding: 40px;
+      line-height: 1.6;
+    }
+
+    h1 {
+      column-span: all;
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    img {
+      float: left;
+      width: 150px;
+      margin: 10px 15px 10px 0;
+      border-radius: 10px;
+    }
+
+    .content {
+      column-count: 3;
+      column-gap: 30px;
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+  <h1>Future of Renewable Energy</h1>
+  <div class="content">
+    <img src="https://picsum.photos/200" alt="Energy">
+    <p>Renewable energy is shaping the future of our planet...</p>
+    <p>Wind, solar, and hydro are the most common sources...</p>
+    <p>Advancements in storage and efficiency will help...</p>
+    <p>Many countries are setting ambitious renewable targets...</p>
+    <p>With consistent innovation, renewable energy can power our future sustainably.</p>
+  </div>
+</body>
+</html>
