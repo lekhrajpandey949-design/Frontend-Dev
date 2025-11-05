@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font-family: Inter, system-ui, Arial;
+    background: #f3f6fb;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px
+}
+
+.cards {
+    display: flex;
+    gap: 24px;
+    max-width: 1100px;
+    justify-content: center;
+    width: 100%
+}
+
+.card {
+    width: 260px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 18px;
+    text-align: center;
+    transition: box-shadow .28s ease, transform .28s ease
+}
+
+.card h3 {
+    font-size: 18px;
+    text-shadow: 0 2px 6px rgba(15, 23, 42, 0.06)
+}
+
+.card p {
+    color: #6b7280;
+    margin-top: 8px
+}
+
+.one {
+    box-shadow: 0 6px 18px rgba(2, 6, 23, 0.06)
+}
+
+.two {
+    box-shadow: 0 10px 26px rgba(2, 6, 23, 0.08)
+}
+
+.three {
+    box-shadow: 0 14px 34px rgba(2, 6, 23, 0.10)
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 26px 64px rgba(2, 6, 23, 0.16)
+}
+
+@media (max-width:900px) {
+    .cards {
+        flex-direction: column;
+        align-items: center
+    }
+}
