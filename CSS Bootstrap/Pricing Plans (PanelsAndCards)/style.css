@@ -1,0 +1,35 @@
+.pricing-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 15px;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1) !important;
+}
+
+.pro-plan {
+    transform: scale(1.05);
+    box-shadow: 0 15px 35px rgba(0, 123, 255, 0.2) !important;
+    border: 2px solid #007bff;
+}
+
+.pro-plan .card-body {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    border-radius: 0 0 13px 13px;
+}
+
+.pro-plan:hover {
+    transform: scale(1.08);
+}
+
+.card-header {
+    border-radius: 15px 15px 0 0 !important;
+}
+
+.pricing-card-title {
+    font-size: 3rem;
+    font-weight: bold;
+}

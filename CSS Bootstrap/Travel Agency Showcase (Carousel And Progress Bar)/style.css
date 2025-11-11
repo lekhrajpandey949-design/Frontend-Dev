@@ -1,0 +1,64 @@
+.carousel-image {
+    height: 500px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    padding: 2rem;
+    bottom: 20%;
+}
+
+.carousel-caption h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.carousel-caption p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.progress {
+    height: 25px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.step {
+    padding: 1rem;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.step.completed {
+    background-color: rgba(40, 167, 69, 0.1);
+    border: 2px solid #28a745;
+}
+
+.step.active {
+    background-color: rgba(0, 123, 255, 0.1);
+    border: 2px solid #007bff;
+}
+
+.step:not(.completed):not(.active) {
+    background-color: rgba(108, 117, 125, 0.1);
+    border: 2px solid transparent;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+footer a:hover {
+    color: #007bff !important;
+    transition: color 0.3s;
+}

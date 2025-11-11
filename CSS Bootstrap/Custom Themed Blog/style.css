@@ -1,0 +1,17 @@
+:root {
+    --bs-primary: #6f42c1;
+    --bs-font-sans-serif: 'Poppins', system-ui, -apple-system, sans-serif;
+}
+
+body {
+    font-family: var(--bs-font-sans-serif);
+}
+
+.blog-card {
+    transition: transform 0.3s;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
