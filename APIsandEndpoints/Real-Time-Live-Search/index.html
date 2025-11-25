@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Live Product Search (jQuery AJAX)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Live Product Search</h1>
+
+    <div class="search-box">
+      <input id="search" type="search" placeholder="Search products..." autocomplete="off" />
+      <div id="loading" class="loading" aria-hidden="true">Loading…</div>
+    </div>
+
+    <ul id="results" class="results"></ul>
+    <div id="no-results" class="no-results" hidden>No products found</div>
+  </main>
+
+  <!-- jQuery from CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
