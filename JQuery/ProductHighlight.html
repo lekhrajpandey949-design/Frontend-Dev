@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Q2 - Product Highlight</title>
+  <style>
+    .product { border:1px solid #ccc; padding:10px; margin:8px; display:inline-block; width:160px; vertical-align:top; }
+    .highlight { background: #fff7c2; }      
+    .selected { outline: 3px solid #ff8; }    
+    .discount { font-weight:bold; color:green; }
+    .out-of-stock { opacity: 0.5; }
+    .details { display:none; font-size:0.9em; }
+  </style>
+</head>
+<body>
+  <header><h1>Products</h1></header>
+
+  <main>
+    <section id="product-list" aria-label="Featured products">
+      <article class="product" data-stock="in" data-discount="10">
+        <h3 class="prod-name">Wireless Earbuds</h3>
+        <p class="price">₹1,299 <span class="discount-flag">10% off</span></p>
+        <button class="favorite">♡ Favorite</button>
+        <div class="details">Battery life: 8hrs, Warranty: 6 months</div>
+      </article>
+
+      <article class="product" data-stock="out" data-discount="0">
+        <h3 class="prod-name">Smart Watch</h3>
+        <p class="price">₹2,999 <span class="discount-flag">No discount</span></p>
+        <button class="favorite">♡ Favorite</button>
+        <div class="details">Water resistant, step counter</div>
+      </article>
+
+      <article class="product" data-stock="in" data-discount="25">
+        <h3 class="prod-name">Bluetooth Speaker</h3>
+        <p class="price">₹899 <span class="discount-flag">25% off</span></p>
+        <button class="favorite">♡ Favorite</button>
+        <div class="details">10W output, portable</div>
+      </article>
+
+      <article class="product" data-stock="in" data-discount="0">
+        <h3 class="prod-name">Phone Case</h3>
+        <p class="price">₹199 <span class="discount-flag">No discount</span></p>
+        <button class="favorite">♡ Favorite</button>
+        <div class="details">Soft TPU, multiple colours</div>
+      </article>
+
+      <article class="product" data-stock="in" data-discount="15">
+        <h3 class="prod-name">Charging Cable</h3>
+        <p class="price">₹249 <span class="discount-flag">15% off</span></p>
+        <button class="favorite">♡ Favorite</button>
+        <div class="details">Fast charge, 1.5m</div>
+      </article>
+    </section>
+  </main>
+
+  <footer><small>Shop demo</small></footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="ProductHighlight.js"></script>
+</body>
+</html>

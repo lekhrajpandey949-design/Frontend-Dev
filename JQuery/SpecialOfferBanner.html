@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Q4 - Special Offers</title>
+  <style>
+    .banner { padding:20px; margin:10px 0; border-radius:6px; background:#ffd; }
+    .controls button { margin-right:6px; }
+  </style>
+</head>
+<body>
+  <header><h1>Special Offers</h1></header>
+
+  <main>
+    <section id="banners">
+      <div class="banner" data-banner="1">Banner 1 - Big sale!</div>
+      <div class="banner" data-banner="2">Banner 2 - Limited time offer!</div>
+      <div class="banner" data-banner="3">Banner 3 - Buy 1 Get 1!</div>
+      <div class="banner" data-banner="4">Banner 4 - Free shipping over ₹999!</div>
+      <div class="banner" data-banner="5">Banner 5 - New arrivals!</div>
+    </section>
+
+    <div class="controls">
+      <button id="hide-btn">Hide (Banner 2)</button>
+      <button id="show-btn">Show (Banner 2)</button>
+      <button id="slide-toggle-btn">Slide Up/Down (all)</button>
+      <button id="fade-toggle-btn">Fade In/Out (all)</button>
+    </div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="SpecialOfferBanner.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Q9 - Multiple jQuery Versions</title>
+  <style>
+    .widget { display:inline-block; padding:10px; border:1px solid #ccc; margin:6px; }
+    .active { box-shadow:0 0 6px #aaa; }
+  </style>
+</head>
+<body>
+  <header><h1>Dashboard Widgets</h1></header>
+
+  <main>
+    <div id="carousel-widget" class="widget">Carousel (v1 handler)</div>
+    <div id="modal-widget" class="widget">Modal (v2 handler)</div>
+    <div id="other-widget" class="widget">Other Widget</div>
+  </main>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script>
+    var jq1 = jQuery.noConflict(true);
+    window.jq1 = jq1;
+  </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="MultiJQueryWidgets.js"></script>
+</body>
+</html>

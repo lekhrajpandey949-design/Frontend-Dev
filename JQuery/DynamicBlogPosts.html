@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Q8 - Blog Admin</title>
+  <style>
+    .post { padding:8px; border:1px solid #ddd; margin:6px 0; }
+    .featured { border-color:#ffb; background:#fffaf0; }
+  </style>
+</head>
+<body>
+  <header><h1>Blog Admin</h1></header>
+
+  <main>
+    <div>
+      <input id="post-title" placeholder="Post title" />
+      <textarea id="post-body" placeholder="Post body"></textarea>
+    </div>
+    <div>
+      <button id="add-post">Add New Post</button>
+      <button id="prepend-post">Prepend Featured Post</button>
+      <button id="remove-last">Remove Last Post</button>
+    </div>
+
+    <section id="posts">
+      <article class="post">Welcome to our blog!</article>
+      <article class="post">Second post - news and updates</article>
+      <article class="post">Third post - community</article>
+      <article class="post">Fourth post - tips</article>
+      <article class="post">Fifth post - tutorial</article>
+    </section>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="DynamicBlogPosts.js"></script>
+</body>
+</html>

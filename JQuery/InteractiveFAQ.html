@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Q3 - FAQ</title>
+  <style>
+    .question { cursor: pointer; padding:8px; border-bottom:1px solid #eee; }
+    .answer { display:none; padding:8px 16px; background:#f9f9f9; }
+    .focused { background:#eef; }
+  </style>
+</head>
+<body>
+  <header><h1>FAQ</h1></header>
+  <main>
+    <section id="faq">
+      <article class="faq-item">
+        <h3 class="question">What is your return policy?</h3>
+        <div class="answer">
+          <p>We accept returns within 30 days.</p>
+          <input type="text" class="answer-input" placeholder="Add a note (optional)" />
+        </div>
+      </article>
+
+      <article class="faq-item">
+        <h3 class="question">How long is shipping?</h3>
+        <div class="answer">
+          <p>Shipping takes 3-7 business days.</p>
+          <input type="text" class="answer-input" placeholder="Ask a follow-up question" />
+        </div>
+      </article>
+
+      <article class="faq-item">
+        <h3 class="question">Do you offer gift wrapping?</h3>
+        <div class="answer">
+          <p>Yes, for a small fee.</p>
+          <input type="text" class="answer-input" placeholder="Add special instructions" />
+        </div>
+      </article>
+
+      <article class="faq-item">
+        <h3 class="question">Can I cancel an order?</h3>
+        <div class="answer">
+          <p>Orders can be canceled within 24 hours.</p>
+          <input type="text" class="answer-input" placeholder="Order ID" />
+        </div>
+      </article>
+
+      <article class="faq-item">
+        <h3 class="question">How do I track my order?</h3>
+        <div class="answer">
+          <p>Use the tracking link sent by email.</p>
+          <input type="text" class="answer-input" placeholder="Enter tracking number" />
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="InteractiveFAQ.js"></script>
+</body>
+</html>

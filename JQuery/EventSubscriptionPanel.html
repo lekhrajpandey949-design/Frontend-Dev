@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Q6 - Subscriptions</title>
+  <style>
+    .topic { margin:6px 0; }
+    .success { color: green; margin-top:8px; }
+  </style>
+</head>
+<body>
+  <header><h1>Subscription Panel</h1></header>
+
+  <main>
+    <section id="subscriptions">
+      <div class="topic" data-topic="news">
+        <span>News</span>
+        <button class="subscribe">Subscribe</button>
+        <button class="unsubscribe">Unsubscribe</button>
+      </div>
+
+      <div class="topic" data-topic="updates">
+        <span>Product Updates</span>
+        <button class="subscribe">Subscribe</button>
+        <button class="unsubscribe">Unsubscribe</button>
+      </div>
+
+      <div class="topic" data-topic="offers">
+        <span>Special Offers</span>
+        <button class="subscribe">Subscribe</button>
+        <button class="unsubscribe">Unsubscribe</button>
+      </div>
+
+      <div id="dynamic-topics"></div>
+    </section>
+
+    <div style="margin-top:10px;">
+      <input id="new-topic-input" placeholder="New topic name" />
+      <button id="add-topic-btn">Add Topic</button>
+      <button id="remove-topic-btn">Remove Offers Topic</button>
+      <div id="message"></div>
+    </div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="q6.js"></script>
+</body>
+</html>
